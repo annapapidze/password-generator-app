@@ -129,7 +129,7 @@ input#slider_id::-webkit-slider-thumb {
 
 .check:checked {
     background-color: #A4FFAF;
-    background-image: url(./assets/images/icon-check.svg);
+    background-image: url(./images/icon-check.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
