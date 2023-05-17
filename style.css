@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #08070B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "JetBrains Mono";
+    font-weight: 700;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    color: #817D92;
+    font-size: 1.6rem;
+    line-height: 2.112rem;
+    text-align: center;
+    margin-top: 6.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.password_div {
+    background-color: #24232C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem;
+    margin-bottom: 1.6rem;
+    position: relative;
+    width: 34.3rem;
+    height: auto;
+}
+
+#password {
+    color: #E6E5EA;
+    font-size: 2.4rem;
+    line-height: 3.168rem;
+}
+
+.hidden_copy {
+    display: none;
+    position: absolute;
+    color: #A4FFAF;
+    font-size: 1.6rem;
+    line-height: 2.112rem;
+    right: 0;
+    margin-right: 4.9rem;
+}
+
+.container {
+    background-color: #24232C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.6rem;
+    width: 34.3rem;
+    height: auto;
+}
+
+.length_result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.para {
+    color: #E6E5EA;
+    font-size: 1.6rem;
+    line-height: 2.112rem;
+}
+
+#result {
+    color: #A4FFAF;
+    font-size: 2.4rem;
+    line-height: 3.168rem;
+}
+
+#slider_id {
+    background: linear-gradient(to right, rgb(164, 255, 175) 0%, rgb(164, 255, 175) 50%, rgb(24, 23, 31) 50%, rgb(24, 23, 31));
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 1.3rem;
+    margin-bottom: 3.2rem;
+    width: 100%;
+    height: 0.8rem;
+}
+
+input#slider_id::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #E6E5EA;
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.include_div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2rem;
+    gap: 1.6rem;
+    width: 100%;
+}
+
+.sections {
+    display: flex;
+    gap: 2rem;
+}
+
+.check {
+    border: 0.2rem solid #E6E5EA;
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+.check:checked {
+    background-color: #A4FFAF;
+    background-image: url(./assets/images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.strength_div {
+    background-color: #18171F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem 1.6rem;
+    margin-bottom: 1.6rem;
+    width: 100%;
+    height: 5.6rem;
+}
+
+.strength {
+    color: #817D92;
+    font-size: 1.6rem;
+    line-height: 2.112rem;
+}
+
+.size_div {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#level {
+    color: #E6E5EA;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 2.376rem;
+    margin-right: 0.8rem;
+}
+
+.too-weak {
+    background-color: #F64A4A;
+    border: 2px solid #F64A4A !important;
+}
+
+.weak {
+    background-color: #FB7C58;
+    border: 2px solid #FB7C58 !important;
+}
+
+.medium {
+    background-color: #FBCD65;
+    border: 2px solid #F8CD65 !important;
+}
+
+.strong {
+    background-color: #A4FFAF;
+    border: 2px solid #A4FFAF !important;
+}
+
+#check_one,
+#check_two,
+#check_three,
+#check_four {
+    border: 0.2rem solid #E6E5EA;
+    width: 1rem;
+    height: 2.8rem;
+}
+
+#btn {
+    background-color: #A4FFAF;
+    color: #24232C;
+    font-family: "JetBrains Mono";
+    font-size: 1.6rem;
+    line-height: 2.112rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 5.6rem;
+}
+
+@media screen and (min-width: 1400px) {
+    .title {
+        font-size: 2.4rem;
+        line-height: 3.168rem;
+        margin-top: 13.3rem;
+        margin-bottom: 3.1rem;
+    }
+
+    .password_div {
+        width: 54rem;
+        padding: 3.2rem;
+    }
+
+    #password {
+        font-size: 3.2rem;
+        line-height: 4.224rem;
+    }
+
+    #copy {
+        cursor: pointer;
+        width: 2.1rem;
+        height: 2.4rem;
+    }
+
+    .hidden_copy {
+        font-size: 1.8rem;
+        line-height: 2.376rem;
+        margin-right: 6.9rem;
+    }
+
+    .password_div svg:hover path {
+        fill: #FFFFFF;
+    }
+
+    .container {
+        padding: 3.2rem;
+        width: 54rem;
+    }
+
+    input#slider_id::-webkit-slider-thumb:hover {
+        background-color: #18171F;
+        border: 0.2rem solid #A4FFAF;
+        cursor: pointer;
+    }
+
+    .para {
+        font-size: 1.8rem;
+        line-height: 2.376rem;
+    }
+
+    .strength_div {
+        margin-bottom: 3.2rem;
+        padding: 3.2rem;
+        height: 7.2rem;
+    }
+
+    .strength {
+        font-size: 1.8rem;
+        line-height: 2.376rem;
+    }
+
+    #btn {
+        height: 7.2rem;
+    }
+
+    #btn:hover {
+        background-color: #24232C;
+        border: 0.2rem solid #A4FFAF;
+        color: #A4FFAF;
+    }
+
+    #btn:hover svg path{
+        fill: #A4FFAF;
+    }
+}
